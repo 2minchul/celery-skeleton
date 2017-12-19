@@ -1,11 +1,11 @@
 ## Running the Celery worker server
 
-### work in foreground
+### Work in foreground
 ```bash
 celery -A app worker -l info
 ```
 
-### work in background
+### Work in background
 ```bash
 celery multi start -A app worker --logfile=worker.log
 
@@ -13,7 +13,7 @@ celery multi start -A app worker --logfile=worker.log
 celery multi stop worker
 ```
 
-### run Celery Beat
+### Run Celery Beat
 ```bash
 # foreground
 celery -A app beat
