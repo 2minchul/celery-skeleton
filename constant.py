@@ -1,5 +1,5 @@
 # coding=utf-8
-def get_rabbitmq_uri(host, user='username', pw='password', vhost='/'):
+def get_rabbitmq_uri(host, user='user', pw='password', vhost='/'):
     from urllib.parse import quote
     return 'amqp://{0}:{1}@{2}:5672/{3}'.format(user, pw, host, quote(vhost, safe=''))
 
